@@ -5,9 +5,10 @@ import UsersModule from './users/users.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/smartmenu_db'),
+    // MongooseModule.forRoot('mongodb://localhost/smartmenu_db'),
+     MongooseModule.forRoot('mongodb+srv://bruce:bruce@cluster0.exmgv.mongodb.net/supamenu'),
     UsersModule,
-    MenuModule
+    // MenuModule
   ],
   controllers: [],
   providers: [],
